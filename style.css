@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-item{
+    border-bottom: solid 2.2px rgb(255, 255, 255);
+    /* border-bottom: solid 2.2px rgb(0, 123, 255); */
+    padding: 10px 0 ;
+}
+.active{
+    border-bottom: solid 2.2px rgb(0, 123, 255); 
+    transition: 0.3s border-bottom ease-in;
+}
+
+
+.btn-nav{
+    border: none;
+    background: none;
+}
+.div-border{
+    border-bottom: solid 1px rgb(230, 230, 230);
+}
+.fila{
+    display: flex;
+}
+
+.div-input {
+    width: 82%;
+}
+
+.div-input input{
+    width: 95%;
+    padding: .5rem 0 .5rem .5rem;
+    border-radius: 5px;
+    border:solid 1.5px rgb(230, 230, 230) ;
+}
+.div-input input:focus{
+    outline-color: rgb(0, 123, 255);
+}
+.div-btn{
+    width: 18%;
+}
+.btn{
+    width: 100%;
+}
+
+.div-check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedor-checkbox{
+    width: 70%;
+}
+.contenedor-btn{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-delete,.btnEdit{
+    background: none;
+    border: none;
+    color: rgb(133, 128, 128);
+    font-size: 1.5rem;
+}
+.btn-delete:hover{
+    color: rgb(162, 61, 61);
+}
+.btnEdit:hover{
+    color:#2fbb26;
+}
+.none{
+    display: none;
+}
+.contenedor-btn-all{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-delete-all{
+    background: rgb(162, 61, 61);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(243, 243, 243);
+    font-size: .8rem;
+}
+.btn-delete-all:hover{
+    background: rgb(196, 22, 22);
+    
+}
