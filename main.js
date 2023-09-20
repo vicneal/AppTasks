@@ -253,7 +253,7 @@ function filterCompleted() {
       
           setTimeout(() => {
               filterCompleted();
-          }, 1200);
+          }, 900);
         })
        //------  Invocamos a la funcion "completeTask" por defecto ---------------------------
        setTimeout(() => {
@@ -305,8 +305,6 @@ function filterUncompleted() {
         inputCheckbox.type = 'checkbox';
         inputCheckbox.checked = tarea.completed;
         inputCheckbox.id = tarea.id;
-        // inputCheckbox.setAttribute("data-bs-toggle","modal")
-        // inputCheckbox.setAttribute("data-bs-target","#exampleModal");
         // Creamos el Label para cada InputCheck
         let label = document.createElement('label');
         label.classList.add('form-check-label');
@@ -316,12 +314,11 @@ function filterUncompleted() {
         //------  Evento que guarda el estado de true o false del InputCheck en el LocalStorage
         inputCheckbox.addEventListener('change', () => {
             setTimeout(() => {
-                completeTask(inputCheckbox, tareas, tarea, label);
+              completeTask(inputCheckbox, tareas, tarea, label);
             }, 50);
-        
             setTimeout(() => {
                 filterUncompleted();
-            }, 1200);
+            }, 900);
         })
         //------  Invocamos a la funcion "completeTask" por defecto ---------------------------
         setTimeout(() => {
