@@ -81,6 +81,7 @@ function addTask(e) {
     localStorage.setItem("tarea",JSON.stringify(tareas))
   }
   form.reset();
+  btnAddTask.disabled = true;
   if (JSON.parse(localStorage.getItem("gaa"))) {
     getTareas();
   } else {
