@@ -123,8 +123,6 @@ function getTareas() {
         inputCheckbox.type = 'checkbox';
         inputCheckbox.checked = tarea.completed;
         inputCheckbox.id = tarea.id;
-        inputCheckbox.setAttribute("data-bs-toggle","modal")
-        inputCheckbox.setAttribute("data-bs-target","#exampleModal");
         // Creamos el Label para cada InputCheck
         let label = document.createElement('label');
         label.classList.add('form-check-label');
@@ -307,6 +305,8 @@ function filterUncompleted() {
         inputCheckbox.type = 'checkbox';
         inputCheckbox.checked = tarea.completed;
         inputCheckbox.id = tarea.id;
+        // inputCheckbox.setAttribute("data-bs-toggle","modal")
+        // inputCheckbox.setAttribute("data-bs-target","#exampleModal");
         // Creamos el Label para cada InputCheck
         let label = document.createElement('label');
         label.classList.add('form-check-label');
